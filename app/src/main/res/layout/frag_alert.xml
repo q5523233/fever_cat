@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tl="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+            android:background="@color/light_blue"
+    >
+
+
+    <!--导航栏-->
+    <RelativeLayout
+        android:id="@+id/rl_temp_user_nav"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_50dp"
+        android:layout_marginTop="@dimen/offset_15dp"
+        >
+
+
+        <!--头像-->
+        <LinearLayout
+            android:id="@+id/ll_alert_user"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/offset_15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <com.nepo.fevercat.common.widget.circular.CircularImage
+                android:id="@+id/iv_alert_user_img"
+                android:layout_width="@dimen/offset_25dp"
+                android:layout_height="@dimen/offset_25dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_alert_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/offset_4dp"
+                android:textColor="@color/color_12"
+                android:textSize="@dimen/font_size_16sp"
+                />
+
+        </LinearLayout>
+
+        <com.flyco.tablayout.SegmentTabLayout
+            android:id="@+id/tab_alert_nav"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_30dp"
+            android:paddingLeft="@dimen/offset_80dp"
+            android:paddingRight="@dimen/offset_80dp"
+            android:layout_centerInParent="true"
+            tl:tl_indicator_anim_enable="true"
+            tl:tl_indicator_bounce_enable="false"
+            tl:tl_indicator_color="#ffffff"
+            tl:tl_bar_stroke_color="#ffffff"
+            tl:tl_bar_stroke_width="@dimen/offset_1dp"
+            tl:tl_textSelectColor="#2C97DE"
+            tl:tl_tab_padding="1dp"
+            tl:tl_textAllCaps="true"
+            android:textAlignment="center"
+            tl:tl_tab_space_equal="true"
+            />
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_alert_add"
+            android:layout_width="@dimen/offset_50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/icon_follow_top_bar_add"
+                />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_alert_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_10"
+        >
+
+        <!--无亲友关注提示-->
+        <RelativeLayout
+            android:id="@+id/rl_alert_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            >
+
+            <include layout="@layout/include_no_alert_view" />
+
+        </RelativeLayout>
+
+        <!--关注列表-->
+        <!--<android.support.v4.widget.SwipeRefreshLayout-->
+            <!--android:id="@+id/swipeLayout_alert"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--&gt;-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_alert_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+        <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+        <LinearLayout
+            android:id="@+id/ll_alert_bottom_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#e6e6e6"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e5e5e5"/>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/tv_alert_selected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="已选择"
+                    android:textColor="#1A1A1A"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_select_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="9dp"
+                    android:layout_toRightOf="@+id/tv_alert_selected"
+                    android:text="0"
+                    android:textColor="#1A1A1A"
+                    android:textSize="14sp"/>
+
+                <Button
+                    android:id="@+id/btn_alter_delete"
+                    android:layout_width="80dp"
+                    android:layout_height="33dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/button_noclickable_shape"
+                    android:gravity="center"
+                    android:text="删除"
+                    android:textColor="#b7b8bd"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_alert_select_all"
+                    android:layout_width="80dp"
+                    android:layout_height="33dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@+id/btn_alter_delete"
+                    android:background="@drawable/bg_selete_all"
+                    android:gravity="center"
+                    android:text="全选"
+                    android:textColor="#000001"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

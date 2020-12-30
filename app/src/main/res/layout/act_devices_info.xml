@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/light_blue"
+              android:orientation="vertical"
+    >
+
+    <include
+        layout="@layout/include_top_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/line_recent_contact"
+        android:orientation="vertical"
+        >
+
+        <!--厂商名称-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_50dp"
+            android:paddingLeft="@dimen/offset_10dp"
+            android:paddingRight="@dimen/offset_10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/devices_info_manufacturer_name"
+                />
+
+            <TextView
+                android:id="@+id/tv_devices_manufacturer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_0.5dp"
+            android:background="@color/view_line"
+            />
+
+        <!--生产型号-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_50dp"
+            android:paddingLeft="@dimen/offset_10dp"
+            android:paddingRight="@dimen/offset_10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/devices_info_production_models"
+                />
+
+            <TextView
+                android:id="@+id/tv_devices_production_models"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_0.5dp"
+            android:background="@color/view_line"
+            />
+
+        <!--生产序列号-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_50dp"
+            android:paddingLeft="@dimen/offset_10dp"
+            android:paddingRight="@dimen/offset_10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/devices_info_production_sequence"
+                />
+
+            <TextView
+                android:id="@+id/tv_devices_production_sequence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_0.5dp"
+            android:background="@color/view_line"
+            />
+
+        <!--硬件版本-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_50dp"
+            android:paddingLeft="@dimen/offset_10dp"
+            android:paddingRight="@dimen/offset_10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/devices_info_hardware_version"
+                />
+
+            <TextView
+                android:id="@+id/tv_devices_hardware_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_0.5dp"
+            android:background="@color/view_line"
+            />
+
+        <!--软件版本-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_50dp"
+            android:paddingLeft="@dimen/offset_10dp"
+            android:paddingRight="@dimen/offset_10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/devices_info_software_version"
+                />
+
+            <TextView
+                android:id="@+id/tv_devices_software_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_0.5dp"
+            android:background="@color/view_line"
+            />
+
+        <!--固件版本-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_50dp"
+            android:paddingLeft="@dimen/offset_10dp"
+            android:paddingRight="@dimen/offset_10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/devices_info_firmware_version"
+                />
+
+            <TextView
+                android:id="@+id/tv_devices_firmware_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_0.5dp"
+            android:background="@color/view_line"
+            />
+
+        <!--协议版本-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_50dp"
+            android:paddingLeft="@dimen/offset_10dp"
+            android:paddingRight="@dimen/offset_10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/devices_info_protocol_version"
+                />
+
+            <TextView
+                android:id="@+id/tv_devices_protocol_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

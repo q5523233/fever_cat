@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+
+    <!--温度-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        >
+        <!--温度值-->
+        <RelativeLayout
+            android:layout_width="@dimen/offset_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset_20dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_temp_chart_y_first"
+                        style="@style/chart_y_text"
+                        android:text="42"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset_20dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_temp_chart_y_first_ex"
+                        style="@style/chart_y_text"
+                        android:text="41"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset_0dp"
+                    android:layout_weight="1.2"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_temp_chart_y_second"
+                        style="@style/chart_y_text"
+                        android:text="40"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset_0dp"
+                    android:layout_weight="1.2"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_temp_chart_y_second_ex"
+                        style="@style/chart_y_text"
+                        android:text="39"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset_0dp"
+                    android:layout_weight="1.1"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_temp_chart_y_third"
+                        style="@style/chart_y_text"
+                        android:text="38"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset_0dp"
+                    android:layout_weight="1.2"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_temp_chart_y_third_ex"
+                        style="@style/chart_y_text"
+                        android:text="37"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset_0dp"
+                    android:layout_weight="1.2"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_temp_chart_y_four"
+                        style="@style/chart_y_text"
+                        android:text="36"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset_0dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        style="@style/chart_y_text"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset_0dp"
+                    android:layout_weight="1.4"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_temp_chart_y_five"
+                        style="@style/chart_y_text"
+                        android:text="35"
+                        />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="@dimen/offset_1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/view_line"
+                />
+
+
+        </RelativeLayout>
+
+
+        <!--网格-->
+        <RelativeLayout
+            android:layout_width="@dimen/offset_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            >
+
+            <!--横向网格-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <View
+                        android:layout_width="@dimen/offset_0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/view_line"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <View
+                        android:layout_width="@dimen/offset_0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/view_line"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <View
+                        android:layout_width="@dimen/offset_0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/view_line"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <View
+                        android:layout_width="@dimen/offset_0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/view_line"
+                        />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <!--纵向网格-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset_0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/offset_0.5dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/view_line"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset_0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/offset_0.5dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/view_line"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset_0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/offset_0.5dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/view_line"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset_0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/offset_0.5dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/view_line"
+                        />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset_0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/offset_0.5dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/view_line"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/offset_0.5dp"
+                            android:layout_alignParentTop="true"
+                            android:background="@color/light_yellow"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="35.00℃"
+                            android:textColor="@color/light_yellow"
+                            android:textSize="@dimen/font_size_12sp"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset_0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/offset_0.5dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/view_line"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset_0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/offset_0.5dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/view_line"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset_0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/offset_0.5dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/view_line"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/offset_1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/view_line"
+                        />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:visibility="visible"
+                >
+
+
+                <View
+                    android:id="@+id/view_base_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset_0.5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="@dimen/offset_5dp"
+                    android:layout_marginTop="@dimen/offset_40dp"
+                    android:background="@color/light_yellow"
+
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/view_base_line"
+                    android:layout_marginRight="@dimen/offset_10dp"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_temp_chart_x_first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="37.50℃"
+                        android:textColor="@color/light_yellow"
+                        android:textSize="@dimen/font_size_12sp"
+                        />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <!--时间-->
+    <RelativeLayout
+        android:id="@+id/rl_chart_bottom_x"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_0dp"
+        android:layout_weight="0.3"
+        android:visibility="visible"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:layout_width="@dimen/offset_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                >
+
+                <TextView
+                    android:id="@+id/tv_chart_bottom_x_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="12:00"
+                    android:textSize="@dimen/offset_10dp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/offset_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/tv_chart_bottom_x_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/offset_10dp"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/offset_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.6"
+                >
+
+                <TextView
+                    android:id="@+id/tv_chart_bottom_x_third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/offset_10dp"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/offset_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/tv_chart_bottom_x_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/offset_10dp"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/offset_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/tv_chart_bottom_x_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:textSize="@dimen/offset_10dp"
+                    />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

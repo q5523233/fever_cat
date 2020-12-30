@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/light_blue"
+    >
+
+    <include
+        layout="@layout/include_top_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_10"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_alert_repeat_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+        <!--保存-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/offset_20dp"
+            android:background="@color/white"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_repeat_day_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_55dp"
+                style="@style/selectBg"
+                android:clickable="true"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/save"
+                    android:textColor="@color/color_02"
+                    android:textSize="@dimen/font_size_16sp"
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

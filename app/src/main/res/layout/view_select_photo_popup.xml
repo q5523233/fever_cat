@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/divider"
+    >
+
+    <LinearLayout
+        android:id="@+id/view_personal_photo_take_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_50dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/personal_photo_take"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#f0f0f0"
+        />
+
+    <LinearLayout
+        android:id="@+id/view_personal_photo_select_sd_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_50dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/personal_photo_select_sd"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#f0f0f0"
+        />
+
+    <LinearLayout
+        android:id="@+id/view_personal_photo_cancel_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_50dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

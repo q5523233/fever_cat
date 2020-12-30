@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_alert_add_water_contain"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/light_blue"
+              android:orientation="vertical"
+    >
+
+
+    <include
+        layout="@layout/include_top_bar"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_10"
+        android:orientation="vertical"
+        >
+
+        <!--喝水时间-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/offset_10dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/offset_15dp"
+                    android:text="@string/alert_water_time"
+                    />
+
+            </RelativeLayout>
+
+            <!--喝水时间-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_130dp"
+                android:orientation="horizontal"
+                >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/offset_20dp"
+                    android:layout_weight="1"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_item_water_time_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/icon_item_medicine_time_bg"
+                        >
+
+                        <RelativeLayout
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            >
+
+                            <TextView
+                                android:id="@+id/tv_item_start_time_start"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/offset_4dp"
+                                android:text="@string/alert_water_time_empty"
+                                android:textColor="@color/color_12"
+                                android:textSize="@dimen/font_size_16sp"
+                                />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_item_water_time_start"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/offset_4dp"
+                        android:text="@string/alert_water_time_start"
+                        android:textSize="@dimen/font_size_12sp"
+                        />
+
+
+                </RelativeLayout>
+
+                <!--分割线-->
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/offset_2dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/icon_item_water_time_line"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/offset_20dp"
+                    android:layout_weight="1"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_item_water_time_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/icon_item_medicine_time_bg"
+                        >
+
+                        <RelativeLayout
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            >
+
+                            <TextView
+                                android:id="@+id/tv_item_water_time_end"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/offset_4dp"
+                                android:text="@string/alert_water_time_empty"
+                                android:textColor="@color/color_12"
+                                android:textSize="@dimen/font_size_16sp"
+                                />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_item_water_time_end"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/offset_4dp"
+                        android:text="@string/alert_water_time_end"
+                        android:textSize="@dimen/font_size_12sp"
+                        />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_0.5dp"
+            android:background="@color/view_line"/>
+
+        <!--喝水量-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_frag_add_water_quantity"
+                style="@style/selectBg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_55dp"
+                android:clickable="true"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/offset_10dp"
+                    android:text="@string/alert_add_height_water"
+                    android:textSize="@dimen/font_size_14sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_frag_add_water_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/offset_10dp"
+                    android:layout_toLeftOf="@+id/iv_medicine_arrow"
+                    android:text="@string/choice"
+                    android:textSize="@dimen/font_size_12sp"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/iv_medicine_arrow"
+                    android:layout_width="@dimen/offset_15dp"
+                    android:layout_height="@dimen/offset_15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/offset_10dp"
+                    android:background="@drawable/icon_arrow_down"
+                    />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_0.5dp"
+            android:background="@color/view_line"/>
+        <!--提醒间隔-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_frag_add_water_time_interval"
+                style="@style/selectBg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_55dp"
+                android:clickable="true"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/offset_10dp"
+                    android:text="@string/alert_water_time_interval"
+                    android:textSize="@dimen/font_size_14sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_frag_add_water_time_interval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/offset_10dp"
+                    android:layout_toLeftOf="@+id/iv_medicine_arrow_time_interval"
+                    android:text="@string/choice"
+                    android:textSize="@dimen/font_size_12sp"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/iv_medicine_arrow_time_interval"
+                    android:layout_width="@dimen/offset_15dp"
+                    android:layout_height="@dimen/offset_15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/offset_10dp"
+                    android:background="@drawable/icon_arrow_down"
+                    />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_0.5dp"
+            android:background="@color/view_line"
+            android:visibility="gone"
+            />
+        <!--提醒铃声-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:visibility="gone"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_frag_add_water_ring"
+                style="@style/selectBg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_55dp"
+                android:clickable="true"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/offset_10dp"
+                    android:text="@string/alert_add_low_ring"
+                    android:textSize="@dimen/font_size_14sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_frag_add_water_ring"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/offset_10dp"
+                    android:layout_toLeftOf="@+id/iv_medicine_arrow_ring"
+                    android:text="@string/choice"
+                    android:textSize="@dimen/font_size_12sp"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/iv_medicine_arrow_ring"
+                    android:layout_width="@dimen/offset_15dp"
+                    android:layout_height="@dimen/offset_15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/offset_10dp"
+                    android:background="@drawable/icon_arrow_down"
+                    />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <!--错误提示-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_30dp"
+            android:layout_marginTop="@dimen/offset_10dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_alert_low_water_select_err_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/offset_20dp"
+                android:text="@string/select_err"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/size_minor"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+        <!--保存-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/offset_20dp"
+            android:background="@color/white"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_frag_add_water_confirm"
+                style="@style/selectBg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_55dp"
+                android:clickable="true"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/save"
+                    android:textColor="@color/color_02"
+                    android:textSize="@dimen/font_size_16sp"
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

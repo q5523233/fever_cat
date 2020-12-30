@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_medicine_contain"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/light_blue"
+              android:orientation="vertical"
+    >
+
+
+    <include
+        layout="@layout/include_top_bar"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_10"
+        >
+
+        <LinearLayout
+            android:id="@+id/rl_frag_add_medicine_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+
+            >
+            <!--药品名称-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_frag_add_medicine"
+                    style="@style/selectBg"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset_55dp"
+                    android:clickable="true"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_frag_add_medicine_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/offset_10dp"
+                        android:text="@string/alert_add_low_medicine_title"
+                        android:textSize="@dimen/font_size_14sp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_frag_add_medicine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/offset_10dp"
+                        android:layout_toLeftOf="@+id/iv_medicine_arrow"
+                        android:text="@string/choice"
+                        android:textSize="@dimen/font_size_12sp"
+                        android:visibility="gone"
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/iv_medicine_arrow"
+                        android:layout_width="@dimen/offset_15dp"
+                        android:layout_height="@dimen/offset_15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/offset_10dp"
+                        android:background="@drawable/icon_arrow_down"
+                        android:visibility="gone"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/edt_alert_medicine_title"
+                        android:layout_width="@dimen/offset_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/offset_50dp"
+                        android:background="@null"
+                        android:hint="@string/alert_add_low_medicine_title_hint"
+                        android:textSize="@dimen/font_size_12sp"
+                        android:maxEms="8"
+                        android:ems="8"
+                        android:lines="1"
+                        android:maxLength="8"
+                        />
+
+
+                </RelativeLayout>
+
+                <requestFocus/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_0.5dp"
+                android:background="@color/view_line"/>
+            <!--重复天数-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_frag_add_medicine_repeat"
+                    style="@style/selectBg"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset_55dp"
+                    android:clickable="true"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/offset_10dp"
+                        android:text="@string/alert_add_height_repeat_day"
+                        android:textSize="@dimen/font_size_14sp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_frag_add_medicine_repeat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/offset_10dp"
+                        android:layout_toLeftOf="@+id/iv_medicine_repeat_arrow"
+                        android:text="@string/choice"
+                        android:textSize="@dimen/font_size_12sp"
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/iv_medicine_repeat_arrow"
+                        android:layout_width="@dimen/offset_15dp"
+                        android:layout_height="@dimen/offset_15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/offset_10dp"
+                        android:background="@drawable/icon_arrow_down"
+                        />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_0.5dp"
+                android:background="@color/view_line"/>
+
+        </LinearLayout>
+
+        <!--吃药时间-->
+        <RelativeLayout
+            android:id="@+id/rl_frag_add_medicine_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_frag_add_medicine_top"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/offset_10dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_frag_add_medicine_time_control"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/offset_15dp"
+                    android:text="@string/alert_add_low_medicine_time"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_frag_add_medicine_time_init"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/offset_15dp"
+                    android:text="@string/alert_add_low_medicine_time_init"
+                    android:textColor="@color/color_02"
+                    />
+
+
+            </RelativeLayout>
+
+            <!--吃药列表-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_frag_add_medicine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_150dp"
+                android:layout_below="@+id/rl_frag_add_medicine_time_control"
+                />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_frag_add_medicine_time"
+            android:orientation="vertical"
+            >
+
+            <!--错误提示-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_30dp"
+                android:layout_marginTop="@dimen/offset_10dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_alert_low_medicine_select_err_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/offset_20dp"
+                    android:text="@string/select_err"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/size_minor"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+
+
+            <!--保存-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/offset_20dp"
+                android:background="@color/white"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_frag_add_medicine_confirm"
+                    style="@style/selectBg"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset_55dp"
+                    android:clickable="true"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/save"
+                        android:textColor="@color/color_02"
+                        android:textSize="@dimen/font_size_16sp"
+                        />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/offset_15dp"
+    >
+
+    <!--宝宝Item-->
+    <LinearLayout
+        android:id="@+id/ll_item_bb"
+        android:layout_width="@dimen/offset_100dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <com.nepo.fevercat.common.widget.circular.CircularImage
+            android:id="@+id/iv_item_bb_img"
+            android:layout_width="@dimen/offset_40dp"
+            android:layout_height="@dimen/offset_40dp"
+            android:background="@drawable/icon_real_time_bb_add_ic"
+            />
+
+        <TextView
+            android:id="@+id/tv_item_bb_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bb_add"
+            android:textSize="@dimen/font_size_12sp"
+            android:textColor="@color/role_right_gray"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

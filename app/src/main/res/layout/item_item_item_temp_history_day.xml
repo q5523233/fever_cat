@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+    <!--历史温度 每日-->
+    <LinearLayout
+        android:id="@+id/ll_temp_history_item_item_day_contain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_50dp"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="@dimen/offset_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/tv_temp_history_item_item_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/font_size_16sp"
+                android:textStyle="bold"
+                />
+
+            <!--时间轴-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                >
+
+                <View
+                    android:layout_width="@dimen/offset_1dp"
+                    android:layout_height="23dp"
+                    android:background="@color/view_line"
+                    />
+
+                <View
+                    android:layout_width="@dimen/offset_8dp"
+                    android:layout_height="@dimen/offset_8dp"
+                    android:background="@drawable/icon_temp_history_item_line_point"
+                    />
+
+
+                <View
+                    android:layout_width="@dimen/offset_1dp"
+                    android:layout_height="23dp"
+                    android:background="@color/view_line"
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/offset_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/offset_15dp"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/temp_history_data_item_height_temp_unit"
+                        android:textSize="@dimen/font_size_12sp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_temp_history_item_item_height_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_size_12sp"
+                        />
+
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/tv_temp_history_item_item_height_temp_sustain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_12sp"
+                    android:layout_marginTop="@dimen/offset_2dp"
+                    />
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line_temp_history_item_item_height_temp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_0.5dp"
+                android:background="@color/view_line"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/offset_15dp"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/offset_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/offset_15dp"
+                android:orientation="vertical"
+                android:gravity="right"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/temp_history_data_item_record_time"
+                    android:textSize="@dimen/font_size_12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_temp_history_item_item_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_12sp"
+                    android:layout_marginTop="@dimen/offset_2dp"
+                    />
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line_temp_history_item_item_record"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_0.5dp"
+                android:background="@color/view_line"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/offset_15dp"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

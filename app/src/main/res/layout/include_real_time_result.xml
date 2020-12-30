@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/rl_temp_result"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_real_time_check_bg"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/offset_10dp"
+            android:orientation="horizontal">
+            <!--版本等…提示-->
+            <RelativeLayout
+                android:id="@+id/rl_real_time_version"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:visibility="visible"
+                >
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/offset_20dp"
+                    android:layout_width="@dimen/offset_20dp"
+                    android:layout_height="@dimen/offset_20dp"
+                    android:background="@drawable/icon_real_version_tip"
+                    />
+
+
+            </RelativeLayout>
+            <TextView
+                android:paddingRight="10dp"
+                android:layout_width="@dimen/offset_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/left"
+                android:textColor="@color/color_02"/>
+
+            <TextView
+                android:layout_marginRight="40dp"
+                android:layout_width="@dimen/offset_0dp"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/right"
+                android:textColor="@color/color_02"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="@dimen/offset_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right">
+
+                <com.nepo.fevercat.common.widget.RealTimeResultView
+                    android:id="@+id/rt_temp_left"
+                    android:layout_width="@dimen/offset_80dp"
+                    android:layout_height="@dimen/offset_80dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="@dimen/offset_30dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="invisible"
+                android:layout_width="@dimen/offset_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left">
+
+                <com.nepo.fevercat.common.widget.RealTimeResultView
+                    android:id="@+id/rt_temp_right"
+                    android:layout_width="@dimen/offset_80dp"
+                    android:layout_height="@dimen/offset_80dp"
+                    android:layout_marginLeft="@dimen/offset_30dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="-40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/temp_delta"
+            android:visibility="invisible"
+            android:textColor="@color/color_02"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/offset_30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/offset_80dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/offset_10dp"
+                    android:id="@+id/tv_baby_tmp_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="正常"
+                    android:textColor="@color/color_02"
+                    android:textSize="@dimen/font_size_16sp"/>
+
+                <!--温度-->
+                <TextView
+                    android:id="@+id/tv_real_time_tmp_alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/icon_real_time_waring_tip"
+                    android:textColor="@color/tv_right_gray"
+                    android:textSize="@dimen/font_size_14sp"
+                    tools:text="37.5"
+                    />
+            </LinearLayout>
+
+
+            <com.nepo.fevercat.common.widget.RealTimeResultView
+                android:id="@+id/rt_tmp_delta"
+                android:visibility="invisible"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+               />
+
+            <TextView
+                android:id="@+id/tv_battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/offset_30dp"
+                android:drawableStart="@drawable/icon_real_time_battery_tip"
+                android:text="98%"
+                android:textColor="@color/bg_white_gray"
+                android:textSize="@dimen/font_size_16sp"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:clickable="true"
+        android:layout_marginBottom="@dimen/offset_8dp"
+        android:paddingBottom="6dp"
+        android:textColor="@color/select_bt_finish"
+        android:gravity="center"
+        android:id="@+id/tv_finish"
+        android:text="@string/finish"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

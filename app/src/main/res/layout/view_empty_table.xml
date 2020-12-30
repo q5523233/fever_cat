@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_temp_no_data"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temp_no_data"
+        />
+
+    <!--邀请按钮-->
+    <RelativeLayout
+        android:id="@+id/rl_add_table"
+        android:layout_width="@dimen/offset_300dp"
+        android:layout_height="@dimen/offset_60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/spacing_middle"
+        android:background="@drawable/icon_login_btn_bg"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/offset_4dp"
+                android:text="@string/add_table"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_middle"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

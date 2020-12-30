@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+                android:id="@+id/ll_item_medicine_contain"
+              android:background="@color/white"
+    >
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_item_medicine_letters"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_30dp"
+        >
+        <TextView
+            android:id="@+id/tv_item_medicine_letters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/offset_15dp"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_0.5dp"
+            android:background="@color/view_line"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_50dp">
+
+        <TextView
+            android:id="@+id/tv_item_medicine_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/offset_15dp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_14sp" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_0.5dp"
+        android:background="@color/view_line" />
+
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:background="@color/white"
+    >
+
+    <!--1-->
+    <LinearLayout
+        android:id="@+id/ll_real_time_bb_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+
+        >
+
+        <com.nepo.fevercat.common.widget.circular.CircularImage
+            android:id="@+id/iv_real_time_bb_first"
+            android:layout_width="@dimen/offset_40dp"
+            android:layout_height="@dimen/offset_40dp"
+            android:background="@drawable/icon_real_time_bb_add_ic"
+            />
+
+        <TextView
+            android:id="@+id/tv_real_time_bb_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bb_add"
+            android:textSize="@dimen/font_size_14sp"
+            />
+
+
+    </LinearLayout>
+    <!--2-->
+    <LinearLayout
+        android:id="@+id/ll_real_time_bb_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+
+        <com.nepo.fevercat.common.widget.circular.CircularImage
+            android:id="@+id/iv_real_time_bb_second"
+            android:layout_width="@dimen/offset_40dp"
+            android:layout_height="@dimen/offset_40dp"
+            android:background="@drawable/icon_real_time_bb_add_ic"
+            />
+
+        <TextView
+            android:id="@+id/tv_real_time_bb_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bb_add"
+            android:textSize="@dimen/font_size_14sp"
+            />
+
+
+    </LinearLayout>
+    <!--3-->
+    <LinearLayout
+        android:id="@+id/ll_real_time_bb_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+
+        <com.nepo.fevercat.common.widget.circular.CircularImage
+            android:id="@+id/iv_real_time_bb_third"
+            android:layout_width="@dimen/offset_40dp"
+            android:layout_height="@dimen/offset_40dp"
+            android:background="@drawable/icon_real_time_bb_add_ic"
+            />
+
+        <TextView
+            android:id="@+id/tv_real_time_bb_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_14sp"
+            android:text="@string/bb_add"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

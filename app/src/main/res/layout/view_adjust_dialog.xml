@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_adjust_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_adjust_num_range"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/offset_15dp"
+            />
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_adjust"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_adjust_tip"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/offset_20dp"
+            >
+
+            <ImageView
+                android:id="@+id/iv_adjust_reduce"
+                android:layout_width="@dimen/offset_33dp"
+                android:layout_height="@dimen/offset_33dp"
+                android:background="@drawable/icon_adjust_reduce"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_adjust_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="125"
+                android:layout_toRightOf="@+id/iv_adjust_reduce"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/font_size_18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/offset_20dp"
+                />
+
+            <ImageView
+                android:id="@+id/iv_adjust_add"
+                android:layout_width="@dimen/offset_35dp"
+                android:layout_height="@dimen/offset_35dp"
+                android:background="@drawable/icon_adjust_add"
+                android:layout_toRightOf="@+id/tv_adjust_count"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/offset_20dp"
+                />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_adjust_desc1"
+            android:layout_centerHorizontal="true"
+            android:text="温度1校准"
+            android:layout_below="@id/rl_adjust"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_adjust2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_adjust_desc1"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/offset_20dp"
+            >
+
+            <ImageView
+                android:id="@+id/iv_adjust_reduce2"
+                android:layout_width="@dimen/offset_33dp"
+                android:layout_height="@dimen/offset_33dp"
+                android:background="@drawable/icon_adjust_reduce"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_adjust_count2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="125"
+                android:layout_toRightOf="@+id/iv_adjust_reduce2"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/font_size_18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/offset_20dp"
+                />
+
+            <ImageView
+                android:id="@+id/iv_adjust_add2"
+                android:layout_width="@dimen/offset_35dp"
+                android:layout_height="@dimen/offset_35dp"
+                android:background="@drawable/icon_adjust_add"
+                android:layout_toRightOf="@+id/tv_adjust_count2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/offset_20dp"
+                />
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_adjust_desc2"
+            android:layout_centerHorizontal="true"
+            android:text="温度2校准"
+            android:layout_below="@id/rl_adjust2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!--邀请按钮-->
+        <RelativeLayout
+            android:id="@+id/rl_follow_confirm"
+            android:layout_width="@dimen/offset_250dp"
+            android:layout_height="@dimen/offset_60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/spacing_middle"
+            android:background="@drawable/icon_login_btn_bg"
+            android:layout_below="@+id/tv_adjust_desc2"
+            android:layout_centerHorizontal="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_adjust_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_middle"
+                    android:layout_marginBottom="@dimen/offset_4dp"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_item_bb_list_contain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_50dp"
+        style="@style/selectBg"
+        android:clickable="true"
+        >
+
+        <com.nepo.fevercat.common.widget.circular.CircularImage
+            android:id="@+id/iv_item_bb_list"
+            android:layout_width="@dimen/offset_25dp"
+            android:layout_height="@dimen/offset_25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/offset_15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_item_bb_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/offset_4dp"
+            android:textSize="@dimen/font_size_16sp"
+            android:textColor="@color/nav_normal"
+            android:layout_toRightOf="@+id/iv_item_bb_list"
+            android:layout_centerVertical="true"
+            android:lines="1"
+            android:ellipsize="end"
+            />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_0.5dp"
+        android:background="@color/view_line"
+        />
+
+
+</LinearLayout>

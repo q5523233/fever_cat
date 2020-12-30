@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/light_blue"
+    >
+
+
+    <!--导航栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/light_blue">
+
+        <RelativeLayout
+            android:id="@+id/rl_mine_help_bar_back"
+            android:layout_width="@dimen/ll_height"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            >
+            <!--导航栏左边图标-->
+            <ImageView
+                android:id="@+id/iv_mine_help_bar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_top_bar_white_back"/>
+
+        </RelativeLayout>
+
+
+        <!--标题-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/mine_adjust"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_middle"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/line_recent_contact"
+        >
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_mine_adjust_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_50dp"
+            android:layout_alignParentTop="true"
+            android:hint="@string/mine_adjust_pwd_hint"
+            android:layout_margin="@dimen/offset_20dp"
+            android:background="@null"
+            android:textSize="@dimen/font_size_14sp"
+            android:inputType="number"
+            />
+
+        <!--保存-->
+        <RelativeLayout
+            android:id="@+id/rl_mine_adjust_save"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_55dp"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/offset_10dp"
+            android:clickable="true"
+            android:layout_below="@+id/edt_mine_adjust_pwd"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:layout_centerInParent="true"
+                android:textColor="@color/color_02"
+                android:textSize="@dimen/font_size_16sp"
+                />
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

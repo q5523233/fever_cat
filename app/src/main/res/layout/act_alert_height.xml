@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/ll_alert_add_height_contain"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/light_blue"
+              android:orientation="vertical"
+    >
+
+
+    <include
+        layout="@layout/include_top_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_10"
+        android:orientation="vertical"
+        >
+
+        <!--温度选择-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_0dp"
+            android:layout_weight="1.2"
+            android:background="@color/color_08"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:layout_width="@dimen/offset_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/alert_item_alert_temp"
+                    android:textSize="@dimen/font_size_16sp"
+                    />
+
+            </RelativeLayout>
+
+            <!--滚轮-->
+            <RelativeLayout
+                android:layout_width="@dimen/offset_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                >
+
+
+                <com.aigestudio.wheelpicker.WheelPicker
+                    android:id="@+id/picker_alert_add_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:paddingEnd="@dimen/offset_4dp"
+                    app:paddingStart="@dimen/offset_4dp"
+                    app:wheel_atmospheric="true"
+                    app:wheel_curtain_color="@color/black"
+                    app:wheel_curved="true"
+                    app:wheel_indicator="false"
+                    app:wheel_item_text_color="@color/color_09"
+                    app:wheel_item_text_size="@dimen/font_size_16sp"
+                    android:layout_marginRight="@dimen/offset_10dp"
+                    />
+
+
+                <!--选择结果-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/offset_0.5dp"
+                            android:background="@color/view_line"
+                            />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_alert_add_height_status"
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/icon_item_alert_height_hot_bg"
+                            android:layout_marginTop="@dimen/offset_2dp"
+                            android:layout_marginBottom="@dimen/offset_2dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/tv_alert_add_height_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white"
+                                android:text="@string/temp_status_middle"
+                                android:textSize="@dimen/font_size_12sp"
+                                />
+
+                        </RelativeLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/offset_0.5dp"
+                            android:background="@color/view_line"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_0.5dp"
+            android:background="@color/view_line"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_0dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            >
+            <!--喝水量-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_alert_add_water"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset_55dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/offset_10dp"
+                        android:text="@string/alert_add_height_water"
+                        android:textSize="@dimen/font_size_14sp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_alert_add_water_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/offset_10dp"
+                        android:layout_toLeftOf="@+id/iv_water_arrow"
+                        android:text="@string/choice"
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/iv_water_arrow"
+                        android:layout_width="@dimen/offset_15dp"
+                        android:layout_height="@dimen/offset_15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/offset_10dp"
+                        android:background="@drawable/icon_arrow_down"
+                        />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_0.5dp"
+                android:background="@color/view_line"
+                android:visibility="gone"
+                />
+
+
+            <!--重复天数-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_alert_add_repeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset_55dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/offset_10dp"
+                        android:text="@string/alert_item_time_interval"
+                        android:textSize="@dimen/font_size_14sp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_alert_add_repeat_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/offset_10dp"
+                        android:layout_toLeftOf="@+id/iv_repeat_arrow"
+                        android:text="@string/choice"
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/iv_repeat_arrow"
+                        android:layout_width="@dimen/offset_15dp"
+                        android:layout_height="@dimen/offset_15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/offset_10dp"
+                        android:background="@drawable/icon_arrow_down"
+                        />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_0.5dp"
+                android:background="@color/view_line"/>
+
+            <!--温馨提示-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/offset_15dp"
+                android:paddingLeft="@dimen/offset_10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/offset_10dp"
+                    android:text="@string/alert_add_height_tip_title"
+                    android:textSize="@dimen/font_size_12sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/offset_4dp"
+                    android:text="@string/alert_add_height_tip_first"
+                    android:textSize="@dimen/font_size_10sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/offset_4dp"
+                    android:text="@string/alert_add_height_tip_second"
+                    android:textSize="@dimen/font_size_10sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/offset_4dp"
+                    android:text="@string/alert_add_height_tip_third"
+                    android:textSize="@dimen/font_size_10sp"
+                    />
+
+
+            </LinearLayout>
+
+            <!--错误提示-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_30dp">
+
+                <TextView
+                    android:id="@+id/tv_alert_height_select_err_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/offset_20dp"
+                    android:text="@string/alert_height_select_err"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/size_minor"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+
+
+            <!--保存-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/offset_10dp"
+                android:background="@color/white"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_alert_add_height_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset_55dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/save"
+                        android:textColor="@color/color_02"
+                        android:textSize="@dimen/font_size_16sp"
+                        />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

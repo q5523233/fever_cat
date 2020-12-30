@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/divider"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_50dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_str_popup_cancel"
+            android:layout_width="@dimen/offset_60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/offset_10dp"
+                android:textColor="@color/color_02"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_str_popup_confirm"
+            android:layout_width="@dimen/offset_60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:layout_marginRight="@dimen/offset_10dp"
+                android:textColor="@color/color_02"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_0.5dp"
+        android:background="@color/color_04" />
+
+
+    <com.aigestudio.wheelpicker.widgets.WheelDayPicker
+        android:id="@+id/str_picker_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/light_blue"
+              android:orientation="vertical"
+    >
+
+
+    <!--导航栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/light_blue">
+
+        <RelativeLayout
+            android:id="@+id/rl_register_bar_back"
+            android:layout_width="@dimen/ll_height"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            >
+            <!--导航栏左边图标-->
+            <ImageView
+                android:id="@+id/iv_register_bar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_top_bar_white_back"/>
+
+        </RelativeLayout>
+
+
+        <!--标题-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_middle"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/line_recent_contact"
+        android:orientation="vertical"
+        >
+
+
+        <!--手机号-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ll_height"
+            android:layout_marginTop="@dimen/spacing_minor_s"
+            android:background="@color/white"
+            >
+
+            <ImageView
+                android:id="@+id/iv_register_edt_left_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/spacing_minor_s"
+                android:background="@drawable/icon_register_edt_left_phone"
+                />
+
+            <EditText
+                android:id="@+id/edt_register_phone"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/spacing_minor"
+                android:layout_toRightOf="@+id/iv_register_edt_left_phone"
+                android:background="@null"
+                android:hint="@string/register_edt_phone_hint"
+                android:inputType="phone"
+                android:maxEms="20"
+                android:maxLength="20"
+                android:textColorHint="@color/color_04"
+                android:textSize="@dimen/font_size"
+                />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_white_gray"
+            />
+        <!--验证码-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ll_height"
+            android:background="@color/white"
+            >
+
+            <ImageView
+                android:id="@+id/iv_register_edt_left_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/spacing_minor_s"
+                android:background="@drawable/icon_register_edt_left_code"
+                />
+
+            <EditText
+                android:id="@+id/edt_register_code"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/spacing_minor"
+                android:layout_toRightOf="@+id/iv_register_edt_left_code"
+                android:background="@null"
+                android:hint="@string/register_edt_code_hint"
+                android:inputType="phone"
+                android:maxEms="20"
+                android:maxLength="20"
+                android:textColorHint="@color/color_04"
+                android:textSize="@dimen/font_size"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl_register_get_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/spacing_minor_s"
+                android:clickable="true"
+                >
+
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/register_get_code_shape"
+                    android:clickable="false"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_register_get_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:clickable="false"
+                        android:text="@string/register_edt_get_code_hint"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_minor"
+                        />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_white_gray"
+            />
+        <!--密码-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ll_height"
+                android:background="@color/white"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_register_edt_left_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_minor_s"
+                    android:background="@drawable/icon_register_edt_left_lock"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_register_pwd"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_minor"
+                    android:layout_toRightOf="@+id/iv_register_edt_left_pwd"
+                    android:background="@null"
+                    android:hint="@string/register_edt_pwd_hint"
+                    android:inputType="textPassword"
+                    android:maxEms="20"
+                    android:maxLength="20"
+                    android:textColorHint="@color/color_04"
+                    android:textSize="@dimen/font_size"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chk_register_pwd_eye"
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/offset_20dp"
+                    android:background="@drawable/register_eye_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_white_gray"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ll_height"
+                android:background="@color/white"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_register_edt_left_pwd_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_minor_s"
+                    android:background="@drawable/icon_register_edt_left_lock"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_register_pwd_again"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_minor"
+                    android:layout_toRightOf="@+id/iv_register_edt_left_pwd_again"
+                    android:background="@null"
+                    android:hint="@string/register_edt_again_pwd_hint"
+                    android:inputType="textPassword"
+                    android:maxEms="20"
+                    android:maxLength="20"
+                    android:textColorHint="@color/color_04"
+                    android:textSize="@dimen/font_size"
+                    />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <!--错误提示-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_55dp">
+
+            <TextView
+                android:id="@+id/tv_register_input_err_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/offset_20dp"
+                android:text="@string/input_err"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/size_minor"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+
+        <!--注册按钮-->
+        <RelativeLayout
+            android:id="@+id/rl_register_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/spacing_big_micro_big"
+            android:background="@drawable/icon_login_btn_bg"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_middle"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

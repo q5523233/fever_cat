@@ -1,0 +1,107 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/color_12</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+
+
+    <style name="MyToggleButton" parent="@android:style/Widget.CompoundButton">
+        <item name="android:button">@drawable/temp_toggle_selector</item>
+    </style>
+
+    <style name="SwitchToggleButton" parent="@android:style/Widget.CompoundButton">
+        <item name="android:button">@drawable/switch_toggle_selector</item>
+    </style>
+
+    <!--自定义switch的按钮和轨迹颜色theme-->
+    <style name="mySwitch" parent="Theme.AppCompat.Light">
+        <!-- switch 打开时的按钮的颜色 轨迹颜色默认为30%（看效果就明白30%是怎么回事了）这个颜色 -->
+        <item name="colorControlActivated">@color/color_02</item>
+        <!--  switch关闭时的按钮的颜色 -->
+        <item name="colorSwitchThumbNormal">@color/color_08</item>
+        <!-- switch关闭时的轨迹的颜色 30%这个颜色 -->
+        <item name="android:colorForeground">@color/color_08</item>
+
+    </style>
+
+    <style name="selectBg">
+        <item name="android:background">?attr/selectableItemBackground</item>
+
+    </style>
+
+
+    <style name="chart_y_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">@dimen/font_size_12sp</item>
+    </style>
+
+    <style name="chart_ex_y_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_size_12sp</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="hour_interval">
+        <item name="android:layout_width">@dimen/offset_60dp</item>
+        <item name="android:layout_height">@dimen/offset_25dp</item>
+        <item name="android:background">@drawable/temp_hour_interval_check_selector</item>
+        <item name="android:paddingLeft">@dimen/offset_8dp</item>
+        <item name="android:paddingRight">@dimen/offset_8dp</item>
+        <item name="android:layout_marginLeft">@dimen/offset_10dp</item>
+        <item name="android:layout_marginTop">@dimen/offset_4dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/font_size_12sp</item>
+        <item name="android:textColor">@color/black</item>
+
+
+    </style>
+
+    <!--购物车加减号按钮-->
+    <declare-styleable name="ShoppingCountView">
+        <attr name="scv_text_color" format="color" />
+        <attr name="scv_text_size" format="dimension" />
+        <attr name="scv_add_btn_bg_color" format="color" />
+        <attr name="scv_add_btn_text_color" format="color" />
+        <attr name="scv_minus_btn_bg_color" format="color" />
+        <attr name="scv_minus_btn_text_color" format="color" />
+        <attr name="scv_space" format="dimension" />
+        <attr name="scv_duration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="RealTimeResultView" >
+        <attr name="tmp_size" format="dimension"/>
+        <attr name="tmp_float_size" format="dimension"/>
+        <attr name="realTimeTempTextsize" format="dimension"/>
+    </declare-styleable>
+    <!--分割线-->
+    <style name="Divider">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">#dcdcdc</item>
+    </style>
+
+    <style name="Divider.Line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Divider.Line.Vertical">
+        <item name="android:layout_height">1px</item>
+    </style>
+
+    <style name="Divider.Line.Horizontal">
+        <item name="android:layout_width">1px</item>
+    </style>
+</resources>

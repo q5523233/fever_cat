@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/ll_item_medicine_time_contain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="@dimen/offset_4dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_item_medicine_time_bg"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                >
+                <TextView
+                    android:id="@+id/tv_item_medicine_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:textSize="@dimen/font_size_16sp"
+                    android:textColor="@color/nav_normal"
+                    android:layout_marginBottom="@dimen/offset_4dp"
+                    />
+
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_item_medicine_time_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add"
+            android:textSize="@dimen/font_size_12sp"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

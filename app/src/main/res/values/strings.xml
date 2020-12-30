@@ -1,0 +1,302 @@
+<resources>
+    <string name="app_name">发烧猫</string>
+
+    <string name="net_error">網絡訪問錯誤，稍後再試</string>
+    <string name="net_error_sec">服務器開了點小差，稍後再試</string>
+    <string name="empty">暫時沒有數據</string>
+    <string name="loading">請稍後...</string>
+    <string name="reload">重新嘗試</string>
+    <string name="no_net">網絡不可用,請檢查你的網絡</string>
+    <string name="no_net_tip">网络不可用</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <style name="add">Add</style>
+
+    <string name="post_success">操作成功！</string>
+
+    <string name="input_err">输入有误，请核对输入！</string>
+    <string name="select_err">选择有误，请核对选择！</string>
+    <string name="alert_height_select_err">请选择间隔时长!</string>
+    <string name="alert_low_water_begin_select_err">请选择开始时间!</string>
+    <string name="alert_low_water_end_select_err">请选择结束时间!</string>
+    <string name="alert_low_water_ml_select_err">请选择喝水量!</string>
+    <string name="alert_low_water_interval_select_err">请选择提醒间隔!</string>
+    <string name="mine_add_nick_err">请输入宝宝昵称!</string>
+    <string name="mine_add_nick_length_err">宝宝昵称请少于10个字!</string>
+    <string name="mine_add_birth_err">请选择宝宝出生日期!</string>
+    <string name="mine_add_gender_err">请选择宝宝性别!</string>
+    <string name="alert_low_medicine_name_select_err">请输入药品名称</string>
+    <string name="alert_low_medicine_repeat_time_select_err">请选择重复天数</string>
+    <string name="alert_low_medicine_take_select_err">请选择吃药时间</string>
+
+    <string name="del">删除</string>
+
+    <string name="save">保存</string>
+
+    <string name="choice">请选择</string>
+
+    <string name="c_default_unit">℃</string>
+    <string name="f_default_unit">℉</string>
+    <string name="c_unit">%1$s℃</string>
+    <string name="f_unit">%1$s℉</string>
+    <string name="temp_status_undue">体温过低</string>
+    <string name="temp_status_normal">正常</string>
+    <string name="temp_status_low">低热</string>
+    <string name="temp_status_middle">中热</string>
+    <string name="temp_status_hot">高热</string>
+    <string name="temp_status_super_hot">超高热</string>
+
+    <string name="open_buletooth">请打开蓝牙之后再进行操作</string>
+    <string name="choice_err_tip">请先关闭连接，再切换宝宝</string>
+    <string name="con_err_tip">设备连接失败！</string>
+    <string name="choice_empty_err_tip">请先选择宝宝</string>
+    <string name="conn_edit_bb_info_err">设备连接中,无法修改宝宝信息！</string>
+    <string name="conn_add_bb_info_err">设备连接中,无法新增宝宝信息！</string>
+    <string name="alert_add_repeat_tip">请勿添加重复提醒!</string>
+
+
+    <!--导航-->
+    <string name="nav_main">实时体温</string>
+    <string name="nav_remind">提醒</string>
+    <string name="nav_attention">亲友关注</string>
+    <string name="nav_data">体温数据</string>
+    <string name="nav_about">我的</string>
+
+    <!--real time-->
+    <string name="bb_add">添加</string>
+    <string name="conn_touch_tip">开始</string>
+    <string name="conn_touch_tip_hint">向右侧滑动</string>
+    <string name="conning_tip">连接中...</string>
+    <string name="temp_height_tip">体温最高值</string>
+    <string name="time_height_tip">超报警时长</string>
+    <string name="temp_status_tip">体温状态</string>
+    <string name="temp_status_tip_hint">正常</string>
+
+    <!--登录-->
+    <string name="login_forget_pwd">忘记密码</string>
+    <string name="login">登录</string>
+    <string name="login_no_register_hint">没有注册?</string>
+    <string name="login_to_register">注册</string>
+    <string name="login_other">其他方式登录</string>
+
+    <!--注册-->
+    <string name="register">注册</string>
+    <string name="register_edt_phone_hint">请输入手机号码</string>
+    <string name="register_edt_phone_err_hint">请输入正确手机号码</string>
+    <string name="register_edt_code_hint">请输入验证码</string>
+    <string name="register_edt_get_code_hint">获取验证码</string>
+    <string name="register_edt_get_code_err_hint">验证码错误</string>
+    <string name="register_edt_get_code_timeout_hint">验证码已过期</string>
+    <string name="register_edt_pwd_hint">请输入密码</string>
+    <string name="register_edt_again_pwd_err_hint">两次输入的密码不一致</string>
+    <string name="register_resend_hint">%1$d s</string>
+    <string name="register_success">注册成功，请登录。</string>
+    <string name="register_edt_again_pwd_hint">请再次输入密码</string>
+    <!--找回密码-->
+    <string name="forget_pwd">重置密码</string>
+    <string name="forget_edt_pwd_hint">请输入新的密码</string>
+    <string name="forget_edt_again_pwd_hint">请再次输入新密码</string>
+    <string name="forget_post">完成</string>
+    <string name="forget_success">修改成功。</string>
+    <string name="forget_protocol_hint">注册代表您已阅读并同意</string>
+    <string name="forget_protocol">《发烧猫用户协议和隐私条规》</string>
+
+    <!--亲友关注-->
+    <string name="follow">亲友关注</string>
+    <string name="follow_no_data">暂无关注</string>
+    <string name="follow_invite">邀请亲友注册</string>
+    <string name="follow_invite_tip">快邀请亲友来发烧猫共同关注宝宝的体温吧</string>
+    <string name="follow_add_title">添加亲友</string>
+    <string name="follow_edit_title">编辑关注</string>
+    <string name="follow_add_nick_name">亲友昵称</string>
+    <string name="follow_add_phone">添加号码</string>
+    <string name="follow_add_code">验证码</string>
+    <string name="follow_add_nick_name_hint">请输入昵称</string>
+    <string name="follow_add_phone_hint">请输入亲友手机号码</string>
+    <string name="follow_add_bind">绑定</string>
+    <string name="follow_add_phone_err_noregister">您添加的用户尚未注册，请通知亲友注册后重新添加关注。</string>
+    <string name="follow_send_wechat">是否立即发送微信邀请亲友注册？</string>
+    <string name="follow_send">快来下载注册发烧猫和我一起关注宝宝的身体状况吧！</string>
+
+
+
+
+
+    <!--我的-->
+    <string name="mine">我的</string>
+    <string name="mine_temp_unit">温度单位</string>
+    <string name="mine_help">帮助</string>
+    <string name="mine_disclaimer">免责声明</string>
+    <string name="mine_about">关于我们</string>
+    <string name="mine_adjust">校准密码</string>
+    <string name="mine_login_out">退出账号</string>
+    <string name="mine_no_login">未登录</string>
+    <string name="mine_edit_user_title">编辑信息</string>
+    <string name="mine_edit_user_nick_name">昵称</string>
+    <string name="mine_edit_user_nick_name_hint">请输入昵称</string>
+    <string name="mine_edit_user_img">头像</string>
+    <string name="personal_photo_take">拍照</string>
+    <string name="personal_photo_select_sd">从相册选择</string>
+    <string name="mine_edit_bb_gender">性别</string>
+    <string name="min_edit_bb_birth">出生年月</string>
+    <string name="mine_edit_bb_male">男</string>
+    <string name="mine_edit_bb_female">女</string>
+
+    <string name="mine_adjust_pwd_hint">请输入校准密码</string>
+    <string name="mine_adjust_pwd_err">校准密码输入错误!</string>
+    <string name="mine_adjust_set_pwd">请先设置校准密码</string>
+    <string name="mine_adjust_set_pwd_detail">我的-校准密码</string>
+    <string name="mine_adjust_title">校准</string>
+    <string name="mine_adjust_num_range">校准数值必须在0~250之间</string>
+    <string name="mine_adjust_true">校准成功</string>
+    <string name="mine_adjust_false">校准失败</string>
+    <string name="mine_adjust_pwd_success">密码设置成功</string>
+    <!--提醒-->
+    <string name="alert_no_data">暂无提醒</string>
+    <string name="alert_add">添加提醒</string>
+    <string name="alert_height_tip">高温</string>
+    <string name="alert_medicine_tip">用药</string>
+    <string name="alert_water_tip">喝水</string>
+    <string name="alert_nav_height_temp">高温提醒</string>
+    <string name="alert_nav_low_temp">降温提醒</string>
+    <string name="alert_item_alert_temp">提醒温度</string>
+    <string name="alert_item_time_interval">间隔时长</string>
+    <string name="alert_add_height_title">添加高温提醒</string>
+    <string name="alert_add_height_water">喝水量</string>
+    <string name="alert_add_height_repeat_day">重复天数</string>
+    <string name="alert_add_height_tip_title">温馨提示</string>
+    <string name="alert_add_height_tip_first">37.5℃~37.99℃为儿童体温的低热区间</string>
+    <string name="alert_add_height_tip_second">38.0℃~38.99℃为中热区间</string>
+    <string name="alert_add_height_tip_third">39.0℃以上为高热区间</string>
+    <string name="alert_add_low_title">添加降温提醒</string>
+    <string name="alert_add_low_nav_medicine">用药提醒</string>
+    <string name="alert_add_low_nav_water">喝水提醒</string>
+    <string name="alert_add_low_medicine_title">药品名称</string>
+    <string name="alert_add_low_medicine_title_hint">请输入药品名称</string>
+    <string name="alert_add_low_ring">提醒铃声</string>
+    <string name="alert_add_low_medicine_time">吃药时间</string>
+    <string name="alert_add_low_medicine_time_init">恢复初始设置</string>
+    <string name="alert_add_low_before_ring">提前提醒</string>
+    <string name="alert_medicine_input_hint">请输入药名</string>
+    <string name="alert_medicine_input_confirm">使用此药名称</string>
+    <string name="alert_medicine_search_empty">没有搜索到\' %1$s \'名称药品</string>
+    <string name="alert_water_time">喝水时间</string>
+    <string name="alert_water_time_start">开始时间</string>
+    <string name="alert_water_time_end">结束时间</string>
+    <string name="alert_water_time_empty">-\t\t-</string>
+    <string name="alert_water_time_interval">提醒间隔</string>
+
+
+    <!--体温数据-->
+    <string name="temp_top_height_tip">近一年体温最高值</string>
+    <string name="temp_top_day_tip">近一年发热天数</string>
+    <string name="temp_top_day_tip_unit">天</string>
+    <string name="temp_no_data">暂无记录</string>
+    <string name="temp_history_data">历史记录</string>
+    <string name="temp_history_data_item_year_unit">%1$s年</string>
+    <string name="temp_history_data_item_month_unit">月</string>
+    <string name="temp_history_data_item_height_temp">最高温度</string>
+    <string name="temp_history_data_item_height_temp_unit">最高温度</string>
+    <string name="temp_history_data_item_hot_day">发热天数%1$s天</string>
+    <string name="temp_history_data_item_record_time">记录时长</string>
+    <string name="temp_history_data_item_height_temp_sustain">%1$s以上持续%2$s</string>
+
+    <!--高温提醒 闹钟-->
+    <string name="alert_height_dialog_title">高温提醒闹钟</string>
+    <string name="alert_height_dialog_temp_tip_one">宝宝%1$s目前正处于</string>
+    <string name="alert_height_dialog_temp_tip_two">高温</string>
+    <string name="alert_height_dialog_temp_tip_three">请尽快降温</string>
+    <string name="alert_height_dialog_temp_tip_four">(不再需要提醒可到设置界面关闭)</string>
+    <string name="alert_height_dialog_temp_tip_five">去设置</string>
+    <string name="alert_height_dialog_temp_tip_six">知道了</string>
+
+    <string name="alert_medicine_dialog_title">吃药提醒</string>
+    <string name="alert_water_dialog_title">喝水提醒</string>
+    <string name="alert_water_time_interval_s">%1$s\t ~ \t%2$s</string>
+    <string name="alert_water_unit_s">%1$s水</string>
+
+    <string name="temp_height_warning">测试温度已超出设备测试范围</string>
+    <string name="guide_skip">跳过</string>
+    <string name="guide_entry">立即体验</string>
+
+
+    <string name="share_month_height_temp">本月体温最高值</string>
+    <string name="share_month_height_hot">本月发热天数</string>
+    <string name="share_temp_chart">温度曲线图</string>
+
+
+    <!--设备信息-->
+    <string name="devices_info_title">设备信息</string>
+    <string name="devices_info_manufacturer_name">厂商名字：</string>
+    <string name="devices_info_production_models">生产型号：</string>
+    <string name="devices_info_production_sequence">生产序列号：</string>
+    <string name="devices_info_hardware_version">硬件版本：</string>
+    <string name="devices_info_software_version">软件版本：</string>
+    <string name="devices_info_firmware_version">固件版本：</string>
+    <string name="devices_info_protocol_version">协议版本：</string>
+
+
+    <!--设备已断开连接是否继续连接？-->
+    <string name="devices_disconnect_tip">设备已断开连接是否继续连接？</string>
+    <string name="time">时间</string>
+    <string name="all_day">全天</string>
+    <string name="super_35">(超过37.5℃)</string>
+    <string name="Monday">周一</string>
+    <string name="Tuesday">周二</string>
+    <string name="Wednesday">周三</string>
+    <string name="Thursdays">周四</string>
+    <string name="fridays">周五</string>
+    <string name="Saturday">周六</string>
+    <string name="Sunday">周日</string>
+
+    <string name="minutes">30 分钟</string>
+    <string name="one_hour">1 小时</string>
+    <string name="one_half_hour">1.5 小时</string>
+    <string name="two_hour">2 小时</string>
+    <string name="two_half_hour">2.5 小时</string>
+    <string name="three_hour">3 小时</string>
+    <string name="four_hour">4 小时</string>
+    <string name="five_hour">5 小时</string>
+    <string name="six_hour">6 小时</string>
+
+    <string name="how_x_time">第%1$s次</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+    <string name="second">秒</string>
+
+    <string name="share_qq">QQ</string>
+    <string name="share_wm">微信</string>
+    <string name="share_wb">微博</string>
+    <string name="share_to">分享到</string>
+
+    <string name="again_exit">再按一次退出</string>
+    <string name="set_height_temp_alert_tip">设置高温警报提醒</string>
+    <string name="login_input_err_pwd">密码输入错误</string>
+    <string name="login_no_register">此用户未注册</string>
+    <string name="Per_day">每天</string>
+    <string name="select_user_pic_err">请选择头像！</string>
+    <string name="time_length">(报警值时长)</string>
+    <string name="look">查看</string>
+    <!--批量管理-->
+    <string name="select_all">全选</string>
+    <string name="select_all_cancel">取消全选</string>
+    <string name="add_bb_err">最多只能添加5个宝宝</string>
+    <string name="send_follow_sms">是否短信告知亲友当前宝宝体温状况</string>
+    <string name="send">发送</string>
+    <string name="no_send">不发送</string>
+    <string name="sms_permission_denied">发送短信权限未开启，开启权限后才能发送短信</string>
+    <string name="left">左</string>
+    <string name="right">右</string>
+    <string name="finish">结束监测</string>
+    <string name="mine_document">对称平衡测量操作及注意事项</string>
+    <string name="temp_delta">温差曲线</string>
+    <string name="base_info_excel">基础信息量化</string>
+    <string name="motion_quantization_table">运动量化</string>
+    <string name="add_table">添加数据</string>
+    <string name="excel">导出excel</string>
+    <string name="stop">停止记录</string>
+    <string name="clear">清除记录</string>
+</resources>

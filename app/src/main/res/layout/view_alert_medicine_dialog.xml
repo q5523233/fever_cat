@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <!--顶部-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_50dp"
+        android:background="@color/color_08"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/offset_15dp"
+                android:layout_height="@dimen/offset_15dp"
+                android:layout_marginRight="@dimen/offset_2dp"
+                android:src="@drawable/icon_real_time_waring_tip"
+                android:layout_marginTop="@dimen/offset_2dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alert_medicine_dialog_title"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_0.5dp"
+        android:background="@color/view_line"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/color_08"
+        android:padding="@dimen/offset_20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/offset_10dp"
+            android:layout_marginBottom="@dimen/offset_10dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_alert_medicine_dialog_time_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_16sp"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_alert_medicine_dialog_name_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/offset_50dp"
+                android:textSize="@dimen/font_size_16sp"
+                />
+
+
+            </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alert_height_dialog_temp_tip_four"
+            android:textSize="@dimen/font_size_12sp"
+            android:textColor="@color/color_18"
+            android:layout_marginTop="@dimen/offset_8dp"
+
+            />
+
+        </LinearLayout>
+
+
+    <!--底部-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_60dp"
+        android:background="@color/color_19"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_alert_height_dialog_cancel"
+            android:layout_width="@dimen/offset_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alert_height_dialog_temp_tip_five"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/font_size_16sp"
+                android:textColor="@color/color_12"
+                />
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="@dimen/offset_0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/view_line"
+            android:layout_marginTop="@dimen/offset_20dp"
+            android:layout_marginBottom="@dimen/offset_20dp"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_alert_height_dialog_confirm"
+            android:layout_width="@dimen/offset_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alert_height_dialog_temp_tip_six"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/font_size_16sp"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

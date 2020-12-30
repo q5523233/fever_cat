@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/light_blue"
+    >
+
+
+    <!--导航栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/light_blue">
+
+        <RelativeLayout
+            android:id="@+id/rl_follow_add_bar_back"
+            android:layout_width="@dimen/ll_height"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            >
+            <!--导航栏左边图标-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_top_bar_white_back"/>
+
+        </RelativeLayout>
+
+
+        <!--标题-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/follow_edit_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_middle"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_10"
+        android:orientation="vertical"
+        >
+
+
+        <!--亲友昵称-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ll_height"
+            android:layout_marginTop="@dimen/spacing_minor_s"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:id="@+id/iv_follow_add_edt_left_nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/spacing_minor_s"
+                android:text="@string/follow_add_nick_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_12sp"
+                />
+
+            <EditText
+                android:id="@+id/edt_follow_add_nick_name"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/spacing_minor"
+                android:layout_toRightOf="@+id/iv_follow_add_edt_left_nick_name"
+                android:background="@null"
+                android:hint="@string/follow_add_nick_name_hint"
+                android:maxEms="20"
+                android:maxLength="20"
+                android:textSize="@dimen/font_size"
+                />
+
+
+        </RelativeLayout>
+
+
+        <!--错误提示-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_55dp">
+
+            <TextView
+                android:id="@+id/tv_follow_add_input_err_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/offset_20dp"
+                android:text="@string/input_err"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/size_minor"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+
+        <!--绑定-->
+        <RelativeLayout
+            android:id="@+id/rl_follow_add_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/spacing_big_micro_big"
+            android:background="@drawable/icon_login_btn_bg"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_middle"
+                />
+
+
+        </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>

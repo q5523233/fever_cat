@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/divider"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_gender_male"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_50dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_edit_bb_male"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#f0f0f0"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_gender_female"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_50dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_edit_bb_female"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#f0f0f0"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/view_personal_photo_cancel_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_50dp"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

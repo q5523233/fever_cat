@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/offset_10dp"
+        android:text="@string/mine_adjust_pwd_hint"
+        />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/edt_adjust_pwd_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_50dp"
+        android:layout_margin="@dimen/offset_10dp"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:id="@+id/tv_adjust_pwd_tip_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/offset_10dp"
+        android:text="@string/mine_adjust_pwd_err"
+        android:textColor="@color/color_07"
+        android:textSize="@dimen/font_size_12sp"
+        android:visibility="gone"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_50dp">
+
+        <TextView
+            android:id="@+id/tv_adjust_pwd_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/cancel"
+            android:layout_marginLeft="@dimen/offset_100dp"
+            android:textColor="@color/nav_select"
+            />
+
+        <TextView
+            android:id="@+id/tv_adjust_pwd_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/confirm"
+            android:layout_marginRight="@dimen/offset_100dp"
+            android:textColor="@color/nav_select"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

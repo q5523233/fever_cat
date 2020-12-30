@@ -1,0 +1,285 @@
+<resources>
+    <string name="app_name">FeverCat</string>
+
+    <string name="net_error">Network Wrong</string>
+    <string name="net_error_sec">Network Wrong</string>
+    <string name="empty">No Data</string>
+    <string name="loading">Please wait...</string>
+    <string name="reload">Retry</string>
+    <string name="no_net">The network is not available, please check your network</string>
+    <string name="no_net_tip">Network unavailable</string>
+    <string name="confirm">ok</string>
+    <string name="cancel">Cancel</string>
+    <style name="add">Add</style>
+
+    <string name="post_success">Operation is successful！</string>
+
+    <string name="input_err">Input wrong, please check the choice!</string>
+    <string name="select_err">Choose wrong, please check the choice!</string>
+    <string name="alert_height_select_err">Please Selected Time Interval!</string>
+    <string name="alert_low_water_begin_select_err">Please Selected Start Time!</string>
+    <string name="alert_low_water_end_select_err">Please Selected End Time!</string>
+    <string name="alert_low_water_ml_select_err">Please Selected Water capacity!</string>
+    <string name="alert_low_water_interval_select_err">Please Selected Time Interval!</string>
+    <string name="mine_add_nick_err">Please Input Nickname!</string>
+    <string name="mine_add_nick_length_err">The baby nickname is less than 10 words!</string>
+    <string name="mine_add_birth_err">birth!</string>
+    <string name="mine_add_gender_err">Please Selected Sex!</string>
+    <string name="alert_low_medicine_name_select_err">Please Input Drug Name</string>
+    <string name="alert_low_medicine_repeat_time_select_err">Repeat Days</string>
+
+    <string name="del">Del</string>
+
+    <string name="save">Save</string>
+
+    <string name="choice">Please select</string>
+
+    <string name="c_default_unit">℃</string>
+    <string name="f_default_unit">℉</string>
+    <string name="c_unit">%1$s℃</string>
+    <string name="f_unit">%1$s℉</string>
+    <string name="temp_status_undue">Low</string>
+    <string name="temp_status_normal">Normal</string>
+    <string name="temp_status_low">Lower</string>
+    <string name="temp_status_middle">Mid</string>
+    <string name="temp_status_hot">High</string>
+    <string name="temp_status_super_hot">Super High Fever</string>
+
+    <string name="choice_err_tip">Please close the connection first and switch the baby</string>
+    <string name="con_err_tip">Failed device connection！</string>
+    <string name="choice_empty_err_tip">Please select your baby first</string>
+    <string name="conn_edit_bb_info_err">Device connection cannot modify baby information！</string>
+    <string name="conn_add_bb_info_err">Device connection cannot add baby information！</string>
+    <string name="alert_add_repeat_tip">Do not add duplicate reminders!</string>
+
+
+    <!--导航-->
+    <string name="nav_main">Temperature</string>
+    <string name="nav_remind">Reminder</string>
+    <string name="nav_attention">Follow</string>
+    <string name="nav_data">Data</string>
+    <string name="nav_about">Me</string>
+
+    <!--real time-->
+    <string name="bb_add">Add</string>
+    <string name="conn_touch_tip">Start</string>
+    <string name="conn_touch_tip_hint">Slide to the Right</string>
+    <string name="conning_tip">connecting</string>
+    <string name="temp_height_tip">The highest TEMP</string>
+    <string name="time_height_tip">Super Alarm Time</string>
+    <string name="temp_status_tip">TEMP status</string>
+    <string name="temp_status_tip_hint">Normal</string>
+
+    <!--登录-->
+    <string name="login_forget_pwd">Forget Password</string>
+    <string name="login">Login</string>
+    <string name="login_no_register_hint">Not Registered?</string>
+    <string name="login_to_register">Register</string>
+    <string name="login_other">Login in other ways</string>
+
+    <!--注册-->
+    <string name="register">Register</string>
+    <string name="register_edt_phone_hint">Input Phone Number</string>
+    <string name="register_edt_code_hint">please Input Verification Code</string>
+    <string name="register_edt_get_code_hint">GetCode</string>
+    <string name="register_edt_pwd_hint">Please Input Password</string>
+    <string name="register_resend_hint">%1$d s</string>
+    <string name="register_success">Register successfully, please login.</string>
+
+    <!--找回密码-->
+    <string name="forget_pwd">reset passwords</string>
+    <string name="forget_edt_pwd_hint">Please Enter a New Password</string>
+    <string name="forget_edt_again_pwd_hint">Please Again Enter a New Password</string>
+    <string name="forget_post">Done</string>
+    <string name="forget_protocol_hint">The registration represents you have read and agree</string>
+    <string name="forget_protocol">《Fever cat user agreement and privacy rules》</string>
+
+    <!--亲友关注-->
+    <string name="follow">Follow</string>
+    <string name="follow_no_data">No Follow</string>
+    <string name="follow_invite">Invite Friends</string>
+    <string name="follow_invite_tip">Invite your friends to take care of your baby</string>
+    <string name="follow_add_title">Add Friend</string>
+    <string name="follow_edit_title">Edit attention</string>
+    <string name="follow_add_nick_name">nickname</string>
+    <string name="follow_add_phone">Add No</string>
+    <string name="follow_add_code">Code</string>
+    <string name="follow_add_nick_name_hint">Please Input Nickname</string>
+    <string name="follow_add_phone_hint">Phone</string>
+    <string name="follow_add_bind">Binding</string>
+
+    <!--我的-->
+    <string name="mine">Me</string>
+    <string name="mine_temp_unit">TEMP Unit</string>
+    <string name="mine_help">Help</string>
+    <string name="mine_disclaimer">Disclaimer</string>
+    <string name="mine_about">About Us</string>
+    <string name="mine_adjust">Calibration password</string>
+    <string name="mine_login_out">Exit the Account</string>
+    <string name="mine_no_login">Not login</string>
+    <string name="mine_edit_user_title">Edit the information</string>
+    <string name="mine_edit_user_nick_name">Nickname</string>
+    <string name="mine_edit_user_nick_name_hint">Please Input Nickname</string>
+    <string name="mine_edit_user_img">head portrait</string>
+    <string name="personal_photo_take">Take pictures</string>
+    <string name="personal_photo_select_sd">Photo album to choose</string>
+    <string name="mine_edit_bb_gender">sexuality</string>
+    <string name="min_edit_bb_birth">birth</string>
+    <string name="mine_edit_bb_male">boy</string>
+    <string name="mine_edit_bb_female">gril</string>
+
+    <string name="mine_adjust_pwd_hint">Please enter the calibration password</string>
+    <string name="mine_adjust_pwd_err">Correct password input error!</string>
+    <string name="mine_adjust_set_pwd">Please set the calibration password first</string>
+    <string name="mine_adjust_set_pwd_detail">My - calibration password</string>
+    <string name="mine_adjust_title">calibration</string>
+    <string name="mine_adjust_num_range">the calibration value must be between 0 and 250</string>
+    <string name="mine_adjust_true">Successful calibration</string>
+    <string name="mine_adjust_false">Calibration failure</string>
+    <!--提醒-->
+    <string name="alert_no_data">No Reminder</string>
+    <string name="alert_add">Add Reminder</string>
+    <string name="alert_height_tip">Heat</string>
+    <string name="alert_medicine_tip">OTC</string>
+    <string name="alert_water_tip">Water</string>
+    <string name="alert_nav_height_temp">Heat remind</string>
+    <string name="alert_nav_low_temp">Cool remind</string>
+    <string name="alert_item_alert_temp">TEMP Reminder</string>
+    <string name="alert_item_time_interval">Time Interval</string>
+    <string name="alert_add_height_title">Add High TEMP Reminder</string>
+    <string name="alert_add_height_water">Water capacity</string>
+    <string name="alert_add_height_repeat_day">Repeat Days</string>
+    <string name="alert_add_height_tip_title">TIPS</string>
+    <string name="alert_add_height_tip_first">37.5℃~37.99℃ Lower TEMP region</string>
+    <string name="alert_add_height_tip_second">38.0℃~38.99℃ Mid TEMP region</string>
+    <string name="alert_add_height_tip_third">39.0℃ Height TEMP region</string>
+    <string name="alert_add_low_title">Add cooling reminder</string>
+    <string name="alert_add_low_nav_medicine">Medication remind</string>
+    <string name="alert_add_low_nav_water">Drink water to remind</string>
+    <string name="alert_add_low_medicine_title">Drug Name</string>
+    <string name="alert_add_low_medicine_title_hint">Please Input Drug Name</string>
+    <string name="alert_add_low_ring">Remind the bell</string>
+    <string name="alert_add_low_medicine_time">Medication Time</string>
+    <string name="alert_add_low_medicine_time_init">Reset</string>
+    <string name="alert_add_low_before_ring">Remind advance</string>
+    <string name="alert_medicine_input_hint">Please Input Drug Name</string>
+    <string name="alert_medicine_input_confirm">Use the name of this drug</string>
+    <string name="alert_medicine_search_empty">There is no search\' %1$s \'The name of the drug</string>
+    <string name="alert_water_time">Drinking time</string>
+    <string name="alert_water_time_start">Start</string>
+    <string name="alert_water_time_end">End</string>
+    <string name="alert_water_time_empty">-\t\t-</string>
+    <string name="alert_water_time_interval">Reminder Interval</string>
+
+
+    <!--体温数据-->
+    <string name="temp_top_height_tip">Highest Temperature</string>
+    <string name="temp_top_day_tip">Heat Days</string>
+    <string name="temp_top_day_tip_unit">Day</string>
+    <string name="temp_no_data">No record</string>
+    <string name="temp_history_data">History Record</string>
+    <string name="temp_history_data_item_year_unit">%1$sYear</string>
+    <string name="temp_history_data_item_month_unit">Month</string>
+    <string name="temp_history_data_item_height_temp">Top TEMP</string>
+    <string name="temp_history_data_item_height_temp_unit">Top TEMP</string>
+    <string name="temp_history_data_item_hot_day">Fever days%1$sDay</string>
+    <string name="temp_history_data_item_record_time">Record time</string>
+    <string name="temp_history_data_item_height_temp_sustain">%1$s above continue%2$s</string>
+
+    <!--高温提醒 闹钟-->
+    <string name="alert_height_dialog_title">High temperature alarm clock</string>
+    <string name="alert_height_dialog_temp_tip_one">Baby%1$s At the moment</string>
+    <string name="alert_height_dialog_temp_tip_two">Heat</string>
+    <string name="alert_height_dialog_temp_tip_three">Please cool down as soon as possible</string>
+    <string name="alert_height_dialog_temp_tip_four">(No longer need to remind the Settings interface to close)</string>
+    <string name="alert_height_dialog_temp_tip_five">To set up</string>
+    <string name="alert_height_dialog_temp_tip_six">Got it</string>
+
+    <string name="alert_medicine_dialog_title">Medication Reminder</string>
+    <string name="alert_water_dialog_title">Water Reminder</string>
+    <string name="alert_water_time_interval_s">%1$s\t ~ \t%2$s</string>
+    <string name="alert_water_unit_s">%1$s water</string>
+
+    <string name="temp_height_warning">The test temperature has exceeded the equipment test range</string>
+    <string name="guide_skip">Skip</string>
+    <string name="guide_entry">Experience immediately</string>
+
+
+    <string name="share_month_height_temp">The temperature is the highest this month</string>
+    <string name="share_month_height_hot">Fever days this month</string>
+    <string name="share_temp_chart">TEMP curve</string>
+
+
+    <!--设备信息-->
+    <string name="devices_info_title">Device Info</string>
+    <string name="devices_info_manufacturer_name">Manufacturer Name：</string>
+    <string name="devices_info_production_models">Production Model：</string>
+    <string name="devices_info_production_sequence">Production serial Number：</string>
+    <string name="devices_info_hardware_version">Hardware Version：</string>
+    <string name="devices_info_software_version">Software Version：</string>
+    <string name="devices_info_firmware_version">Firmware Version：</string>
+    <string name="devices_info_protocol_version">Protocol Version：</string>
+
+
+    <!--设备已断开连接是否继续连接？-->
+    <string name="devices_disconnect_tip">The device has been disconnected to continue connection？</string>
+    <string name="time">Time</string>
+    <string name="all_day">all day</string>
+    <string name="super_35">(Surpass37.5℃)</string>
+    <string name="Monday">Monday</string>
+    <string name="Tuesday">Tuesday</string>
+    <string name="Wednesday">Wednesday</string>
+    <string name="Thursdays">Thursdays</string>
+    <string name="fridays">fridays</string>
+    <string name="Saturday">Saturday</string>
+    <string name="Sunday">Sunday</string>
+
+    <string name="minutes">30 minutes</string>
+    <string name="one_hour">1 hour</string>
+    <string name="one_half_hour">1.5 hour</string>
+    <string name="two_hour">2 hour</string>
+    <string name="two_half_hour">2.5 hour</string>
+    <string name="three_hour">3 hour</string>
+    <string name="four_hour">4 hour</string>
+    <string name="five_hour">5 hour</string>
+    <string name="six_hour">6 hour</string>
+    <string name="first_time">first_time</string>
+    <string name="how_x_time">How %1$s time</string>
+
+    <string name="year">year</string>
+    <string name="month">month</string>
+    <string name="day">day</string>
+    <string name="hour">hour</string>
+    <string name="minute">minute</string>
+    <string name="second">second</string>
+
+    <string name="share_qq">QQ</string>
+    <string name="share_wm">WeiXin</string>
+    <string name="share_wb">WeiBo</string>
+    <string name="share_to">Share To</string>
+    <string name="again_exit">Press the exit again</string>
+    <string name="set_height_temp_alert_tip">Set high temperature</string>
+    <string name="login_input_err_pwd">Password input error</string>
+    <string name="login_no_register">This user is not registered</string>
+    <string name="Per_day">Per day</string>
+    <string name="mine_adjust_pwd_success">Password set successfully</string>
+    <string name="select_user_pic_err">Please select head!</string>
+    <string name="register_edt_phone_err_hint">Input correct Phone</string>
+    <string name="time_length">(Alarm duration)</string>
+    <string name="look">look</string>
+    <string name="register_edt_get_code_err_hint">Please enter the verification code</string>
+    <string name="register_edt_again_pwd_err_hint">The password is different</string>
+    <string name="register_edt_again_pwd_hint">enter your password again</string>
+    <string name="sms_permission_denied">sendSms faild,permisson Denied!</string>
+    <string name="left">left</string>
+    <string name="right">right</string>
+    <string name="finish">finish</string>
+    <string name="mine_document">Operation of symmetrical balance measurement and matters attention</string>
+    <string name="alert_low_medicine_take_select_err">Please choose the time to take the medicine.</string>
+    <string name="base_info_excel">基础信息量化表</string>
+    <string name="motion_quantization_table">Motion Quantization Table</string>
+    <string name="add_table">添加数据</string>
+    <string name="excel">export as excel</string>
+    <string name="stop">停止</string>
+    <string name="clear">清除记录</string>
+</resources>

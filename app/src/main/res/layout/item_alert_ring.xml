@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_alert_ring_contain"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              style="@style/selectBg"
+              android:clickable="true"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_40dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/tv_alert_ring_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/offset_15dp"
+            />
+
+
+        <RadioButton
+            android:id="@+id/chk_alert_ring_select"
+            android:layout_width="@dimen/offset_20dp"
+            android:layout_height="@dimen/offset_15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/offset_15dp"
+            android:background="@drawable/alert_check_selector"
+            android:button="@null"
+            android:checked="false"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_0.5dp"
+            android:background="@color/view_line"
+            android:layout_alignParentTop="true"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

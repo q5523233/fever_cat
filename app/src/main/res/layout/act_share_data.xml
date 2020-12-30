@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/light_blue"
+                android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_share_contain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <!--导航栏-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_50dp"
+            android:layout_marginTop="@dimen/offset_15dp"
+            android:background="@color/light_blue"
+            >
+
+
+            <RelativeLayout
+                android:id="@+id/rl_share_bar_back"
+                android:layout_width="@dimen/ll_height"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                >
+                <!--导航栏左边图标-->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_top_bar_white_back"/>
+
+            </RelativeLayout>
+            <!--标题-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/nav_data"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_middle"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+        <!--头像-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_0dp"
+            android:layout_weight="0.7"
+            android:background="@color/light_blue"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <com.nepo.fevercat.common.widget.circular.CircularImage
+                    android:id="@+id/iv_mine_user_pic"
+                    android:layout_width="@dimen/offset_55dp"
+                    android:layout_height="@dimen/offset_55dp"
+                    android:background="@drawable/icon_no_login_default"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_mine_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_no_login"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_14sp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <!--发热天数-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_0dp"
+            android:layout_weight="0.8"
+            android:background="@color/line_recent_contact"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:layout_width="@dimen/offset_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    >
+
+                    <!--最高温度-->
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_share_height_temp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/nav_select"
+                            android:textSize="@dimen/font_size_24sp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="top"
+                            android:layout_toRightOf="@+id/tv_share_height_temp"
+                            android:text="℃"
+                            android:textColor="@color/nav_select"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_height="13dp"
+                            android:background="@drawable/icon_real_time_temp_hight_tip"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/offset_4dp"
+                            android:text="@string/share_month_height_temp"
+                            android:textSize="@dimen/font_size_12sp"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="@dimen/offset_0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/offset_10dp"
+                android:layout_marginTop="@dimen/offset_10dp"
+                android:background="@color/view_line"
+                />
+
+            <RelativeLayout
+                android:layout_width="@dimen/offset_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <!--本月发热天数-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_share_height_hot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/nav_select"
+                            android:textSize="@dimen/font_size_24sp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/tv_share_height_hot"
+                            android:layout_toRightOf="@+id/tv_share_height_hot"
+                            android:text="@string/temp_top_day_tip_unit"
+                            android:textColor="@color/nav_select"
+                            android:textSize="@dimen/font_size_16sp"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_height="13dp"
+                            android:background="@drawable/icon_share_month_height_hot"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/offset_4dp"
+                            android:text="@string/share_month_height_hot"
+                            android:textSize="@dimen/font_size_12sp"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_10dp"
+            android:background="@color/color_10"
+            />
+
+        <!--温度曲线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_0dp"
+            android:layout_weight="3"
+            android:background="@color/line_recent_contact"
+            android:orientation="vertical"
+            >
+
+            <!--标题-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_50dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/offset_10dp"
+                    android:text="@string/share_temp_chart"
+                    />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset_0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/view_line"
+                    />
+
+            </RelativeLayout>
+
+            <!--时间-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_20dp"
+                android:layout_marginBottom="@dimen/offset_10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/offset_15dp"
+                    android:layout_height="@dimen/offset_15dp"
+                    android:layout_marginLeft="@dimen/offset_10dp"
+                    android:background="@drawable/icon_share_temp_chart_time"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_share_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/offset_4dp"
+                    />
+
+            </LinearLayout>
+
+
+            <!--报警时长-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_20dp"
+                android:layout_marginBottom="@dimen/offset_10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/offset_15dp"
+                    android:layout_height="@dimen/offset_15dp"
+                    android:layout_marginLeft="@dimen/offset_10dp"
+                    android:background="@drawable/icon_real_time_waring_tip"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_share_alert_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/offset_4dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time_length"
+                    />
+
+            </LinearLayout>
+
+
+            <!--图表-->
+            <RelativeLayout
+                android:id="@+id/rl_share_chart"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_130dp"
+                android:visibility="visible"
+                >
+
+
+                <!--中间线-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    >
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/offset_0.5dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="@dimen/offset_20dp"
+                        android:background="@color/light_yellow"
+
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/offset_10dp"
+                        android:layout_marginTop="@dimen/offset_20dp"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="37.50℃"
+                            android:textColor="@color/light_yellow"
+                            android:textSize="@dimen/font_size_12sp"
+                            />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <com.chingteach.chartlibrary.view.LineChartView
+                    android:id="@+id/view_share_hello_line_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/offset_10dp"
+                    />
+
+
+            </RelativeLayout>
+
+
+            <!--无数据-->
+            <LinearLayout
+                android:id="@+id/ll_share_no_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/offset_5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+
+                <ImageView
+                    android:layout_width="@dimen/offset_100dp"
+                    android:layout_height="@dimen/offset_100dp"
+                    android:background="@drawable/icon_temp_no_data"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/temp_no_data"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!--分享栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line_recent_contact"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_10dp"
+            android:background="@color/color_10"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/offset_10dp"
+            android:text="@string/share_to"
+            android:textSize="@dimen/font_size_12sp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <!--qq-->
+            <RelativeLayout
+                android:id="@+id/rl_share_control_qq_channel"
+                android:layout_width="@dimen/offset_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_login_qq"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/share_qq"
+                        />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <!--微信-->
+            <RelativeLayout
+                android:id="@+id/rl_share_control_wx_channel"
+                android:layout_width="@dimen/offset_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_login_wx"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/share_wm"
+                        />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <!--微博-->
+            <RelativeLayout
+                android:id="@+id/rl_share_control_wb_channel"
+                android:layout_width="@dimen/offset_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_login_wb"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/share_wb"
+                        />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

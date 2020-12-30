@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:paddingTop="@dimen/offset_15dp"
+    >
+
+
+    <!--导航-->
+    <RelativeLayout
+        android:id="@+id/rl_temp_user_nav"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_45dp"
+        android:background="@color/white"
+        >
+
+        <!--头像-->
+        <LinearLayout
+            android:id="@+id/ll_temp_user"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/offset_15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <com.nepo.fevercat.common.widget.circular.CircularImage
+                android:id="@+id/iv_temp_user_img"
+                android:layout_width="@dimen/offset_25dp"
+                android:layout_height="@dimen/offset_25dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_temp_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/offset_4dp"
+                android:textColor="@color/color_12"
+                android:textSize="@dimen/font_size_16sp"
+                />
+
+
+        </LinearLayout>
+
+
+        <!--分享-->
+        <RelativeLayout
+            android:id="@+id/rl_temp_share"
+            style="@style/selectBg"
+            android:layout_width="@dimen/offset_50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_main_top_bar_share"
+                />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--内容-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_10"
+        android:orientation="vertical"
+        >
+
+        <!--体温统计-->
+        <LinearLayout
+            android:id="@+id/ll_temp_contain"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_0dp"
+            android:layout_marginTop="@dimen/offset_4dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            >
+
+            <!--体温最高值-->
+            <RelativeLayout
+                android:layout_width="@dimen/offset_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingRight="@dimen/offset_2dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_190dp"
+                    android:layout_height="@dimen/offset_105dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_temp_top_height_bg"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/offset_20dp"
+                        android:layout_marginTop="@dimen/offset_20dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_height="13dp"
+                            android:background="@drawable/icon_temp_top_height_tip"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/offset_4dp"
+                            android:text="@string/temp_top_height_tip"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_12sp"
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <!--温度-->
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/offset_20dp"
+                        android:layout_marginRight="@dimen/offset_20dp"
+                        android:visibility="visible"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_temp_top_height_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_22sp"
+                            android:textStyle="bold"
+                            />
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <!--发热天数-->
+            <RelativeLayout
+                android:layout_width="@dimen/offset_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/offset_2dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_190dp"
+                    android:layout_height="@dimen/offset_105dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_temp_top_day_bg"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/offset_20dp"
+                        android:layout_marginTop="@dimen/offset_20dp"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageView
+                                android:layout_width="13dp"
+                                android:layout_height="13dp"
+                                android:background="@drawable/icon_temp_top_day_tip"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/offset_4dp"
+                                android:text="@string/temp_top_day_tip"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/font_size_12sp"
+                                />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/offset_13dp"
+                            android:text="@string/super_35"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_12sp"
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <!--温度-->
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/offset_20dp"
+                        android:layout_marginRight="@dimen/offset_20dp"
+                        android:visibility="visible"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_temp_top_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/offset_2dp"
+                            android:layout_toLeftOf="@+id/tv_temp_top_day_unit"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_22sp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_temp_top_day_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/tv_temp_top_day"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/temp_top_day_tip_unit"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_12sp"
+                            />
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <!--日历-->
+        <LinearLayout
+            android:id="@+id/ll_temp_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/offset_4dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="visible"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_40dp">
+
+                <ImageView
+                    android:id="@+id/iv_calendar_bar_right"
+                    android:layout_width="@dimen/offset_20dp"
+                    android:layout_height="@dimen/offset_20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/offset_20dp"
+                    android:background="@drawable/icon_calendar_left"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_calendar_bar_left"
+                    android:layout_width="@dimen/offset_20dp"
+                    android:layout_height="@dimen/offset_20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/offset_20dp"
+                    android:background="@drawable/icon_calendar_right"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_calendar_bar_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14sp"
+                    android:textStyle="bold"
+                    />
+
+            </RelativeLayout>
+
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                android:id="@+id/calendar_temp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+
+        </LinearLayout>
+
+        <!--图表-->
+        <LinearLayout
+            android:id="@+id/ll_temp_chart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_0dp"
+            android:layout_marginTop="@dimen/offset_2dp"
+            android:layout_weight="2.5"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="visible"
+            >
+
+            <!--选择框-->
+            <RelativeLayout
+                android:id="@+id/rl_temp_hour_interval"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_60dp"
+                android:layout_marginTop="@dimen/offset_2dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_hour_interval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_hour_interval_first"
+                        style="@style/hour_interval"
+                        android:text="0~6"/>
+
+                    <TextView
+                        android:id="@+id/tv_hour_interval_second"
+                        style="@style/hour_interval"
+                        android:text="6~12"/>
+
+                    <TextView
+                        android:id="@+id/tv_hour_interval_third"
+                        style="@style/hour_interval"
+                        android:text="12~18"/>
+
+                    <TextView
+                        android:id="@+id/tv_hour_interval_four"
+                        style="@style/hour_interval"
+                        android:text="18~24"/>
+
+                    <TextView
+                        android:id="@+id/tv_hour_interval_five"
+                        style="@style/hour_interval"
+                        android:text="@string/all_day"/>
+
+                </LinearLayout>
+
+                <!--最高温-->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_hour_interval"
+                    android:layout_marginLeft="@dimen/offset_50dp"
+                    android:layout_marginTop="@dimen/offset_8dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_temp_height_oval"
+                        android:layout_width="@dimen/offset_8dp"
+                        android:layout_height="@dimen/offset_8dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/icon_temp_height_oval"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_temp_height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/offset_4dp"
+                        android:layout_toRightOf="@+id/iv_temp_height_oval"
+                        android:textSize="@dimen/font_size_12sp"
+                        />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_temp_no_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                >
+
+                <include
+                    layout="@layout/include_no_temp_view"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_temp_data_chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                >
+
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:paddingLeft="@dimen/offset_50dp"-->
+                <!--android:layout_marginRight="@dimen/offset_30dp"-->
+                <!--android:layout_marginTop="@dimen/offset_10dp"-->
+                <!--android:layout_marginBottom="@dimen/offset_10dp"-->
+                <!--android:orientation="vertical"-->
+
+                <!--&gt;-->
+
+
+                <!--</RelativeLayout>-->
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_hello_line_chart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    >
+
+                    <!--图表2-->
+                    <com.chingteach.chartlibrary.view.LineChartView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/offset_0dp"
+                        android:layout_marginTop="@dimen/offset_10dp"
+                        android:paddingLeft="@dimen/offset_15dp"
+                        android:id="@+id/lc_view_hello_line_chart"
+                        />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_hello_line_select_chart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    >
+
+                    <com.chingteach.chartlibrary.view.LineChartView
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/offset_5dp"
+                        android:layout_marginTop="@dimen/offset_10dp"
+                        android:paddingLeft="@dimen/offset_15dp"
+                        android:id="@+id/lc_temp_data"
+                        />
+                </RelativeLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="@dimen/offset_50dp"
+                    android:layout_height="@dimen/offset_20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/offset_60dp"
+                    android:layout_marginTop="@dimen/offset_20dp"
+                    android:visibility="gone"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <!--历史记录-->
+        <LinearLayout
+            style="@style/selectBg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_0dp"
+            android:layout_marginTop="@dimen/offset_4dp"
+            android:layout_weight="0.5"
+            android:clickable="true"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_temp_history"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_50dp"
+                android:background="@color/color_20"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/offset_15dp"
+                    android:text="@string/temp_history_data"
+                    android:textColor="@color/white"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/offset_15dp"
+                    android:layout_toLeftOf="@+id/iv_temp_history_arrow"
+                    android:text="@string/look"
+                    android:textColor="@color/white"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_temp_history_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/offset_15dp"
+                    android:background="@drawable/icon_arrow_top"
+                    />
+
+
+            </RelativeLayout>
+
+            <!--历史记录列表-->
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeLayout_temp_history"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycle_temp_history_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/offset_10dp"
+                    />
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_0dp"
+        android:layout_weight="3"
+        >
+
+
+        <!--Y轴-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <!--42-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_temp_chart_y_first"
+                        android:text="42"
+                        style="@style/chart_ex_y_text"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="@dimen/offset_0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:orientation="vertical"
+                        >
+
+                        <View
+                            android:layout_width="@dimen/offset_0.5dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            />
+
+                        <View
+                            android:layout_width="@dimen/offset_0.5dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/view_line"
+                            />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/offset_0.5dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/view_line"
+                        />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <!--41-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_temp_chart_y_first_ex"
+                        style="@style/chart_ex_y_text"
+                        android:text="41"
+                        />
+
+
+                    <View
+                        android:layout_width="@dimen/offset_0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/view_line"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/offset_0.5dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/view_line"
+                        />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <!--40-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_temp_chart_y_second"
+                        style="@style/chart_ex_y_text"
+                        android:text="40"
+                        />
+
+
+                    <View
+                        android:layout_width="@dimen/offset_0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/view_line"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/offset_0.5dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/view_line"
+                        />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <!--39-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_temp_chart_y_second_ex"
+                        style="@style/chart_ex_y_text"
+                        android:text="39"
+                        />
+
+
+                    <View
+                        android:layout_width="@dimen/offset_0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/view_line"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/offset_0.5dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/view_line"
+                        />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <!--38-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_temp_chart_y_third"
+                        style="@style/chart_ex_y_text"
+                        android:text="38"
+                        />
+
+
+                    <View
+                        android:layout_width="@dimen/offset_0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/view_line"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/offset_0.5dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/view_line"
+                        />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <!--37-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_temp_chart_y_third_ex"
+                        style="@style/chart_ex_y_text"
+                        android:text="37"
+                        />
+
+
+                    <View
+                        android:layout_width="@dimen/offset_0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/view_line"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/offset_0.5dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/view_line"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:orientation="vertical"
+                        >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/offset_0.5dp"
+                            android:layout_alignParentTop="true"
+                            android:background="@color/light_yellow"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_temp_chart_x_first"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="35.00℃"
+                            android:textColor="@color/light_yellow"
+                            android:textSize="@dimen/font_size_12sp"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <!--36-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_temp_chart_y_four"
+                        style="@style/chart_ex_y_text"
+                        android:text="36"
+                        />
+
+
+                    <View
+                        android:layout_width="@dimen/offset_0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/view_line"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/offset_0.5dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/view_line"
+                        />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <!--35-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_temp_chart_y_five"
+                        style="@style/chart_ex_y_text"
+                        android:text="35"
+                        />
+
+
+                    <View
+                        android:layout_width="@dimen/offset_0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/view_line"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/offset_0.5dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/view_line"
+                        />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <!--34-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/offset_0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="horizontal"-->
+                <!--&gt;-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="@dimen/offset_0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="0.4"-->
+                    <!--&gt;-->
+
+                    <!--<TextView-->
+                        <!--style="@style/chart_ex_y_text"-->
+                        <!--android:text="34"-->
+                        <!--/>-->
+
+
+                    <!--<View-->
+                        <!--android:layout_width="@dimen/offset_0.5dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:background="@color/view_line"-->
+                        <!--/>-->
+
+                <!--</RelativeLayout>-->
+
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="@dimen/offset_0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="3"-->
+                    <!--&gt;-->
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="@dimen/offset_0.5dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:background="@color/view_line"-->
+                        <!--/>-->
+
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="@dimen/offset_0.5dp"-->
+                        <!--android:layout_alignParentBottom="true"-->
+                        <!--/>-->
+
+                <!--</RelativeLayout>-->
+
+
+            <!--</LinearLayout>-->
+
+
+        </LinearLayout>
+
+
+        <!--纵轴线-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    >
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <View
+                        android:layout_width="@dimen/offset_0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/offset_10dp"
+                        android:background="@color/view_line"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <View
+                        android:layout_width="@dimen/offset_0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/offset_10dp"
+                        android:background="@color/view_line"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/offset_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <View
+                        android:layout_width="@dimen/offset_0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/offset_10dp"
+                        android:background="@color/view_line"
+                        />
+
+
+                    <View
+                        android:layout_width="@dimen/offset_0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/offset_10dp"
+                        android:background="@color/view_line"
+                        />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <!--时间-->
+    <RelativeLayout
+        android:id="@+id/rl_chart_bottom_x"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_0dp"
+        android:layout_weight="0.3"
+        android:visibility="visible"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:layout_width="@dimen/offset_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                >
+
+                <TextView
+                    android:id="@+id/tv_chart_bottom_x_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="12:00"
+                    android:textSize="@dimen/offset_10dp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/offset_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/tv_chart_bottom_x_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/offset_10dp"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/offset_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.6"
+                >
+
+                <TextView
+                    android:id="@+id/tv_chart_bottom_x_third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/offset_10dp"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/offset_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/tv_chart_bottom_x_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/offset_10dp"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/offset_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/tv_chart_bottom_x_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:textSize="@dimen/offset_10dp"
+                    />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

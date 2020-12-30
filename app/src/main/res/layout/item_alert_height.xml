@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical"
+    >
+
+
+    <!--顶部提示 0 显示-->
+    <LinearLayout
+        android:id="@+id/ll_item_alert_tip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_45dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        >
+
+        <RelativeLayout
+            android:layout_width="@dimen/offset_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/offset_15dp"
+                android:text="@string/alert_item_alert_temp"
+                android:textColor="@color/color_02"
+                android:textSize="@dimen/font_size_14sp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/offset_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/alert_item_time_interval"
+                android:textColor="@color/color_02"
+                android:textSize="@dimen/font_size_14sp"
+                />
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="@dimen/offset_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_0.5dp"
+        android:background="@color/view_line"
+        />
+
+
+    <!--侧滑-->
+    <com.mcxtzhang.swipemenulib.SwipeMenuLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:clickable="true"
+        app:ios="false"
+        app:leftSwipe="true"
+        app:swipeEnable="true"
+
+        >
+
+
+        <!--真实内容-->
+        <LinearLayout
+            android:id="@+id/ll_item_alert_contain"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_60dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            >
+
+            <!--提醒温度-->
+            <LinearLayout
+                android:layout_width="@dimen/offset_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/tv_item_alert_height_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/offset_15dp"
+                    android:minEms="2"
+                    android:textSize="@dimen/font_size_14sp"
+                    />
+
+
+                <!--状态-->
+                <RelativeLayout
+                    android:id="@+id/rl_item_alert_height_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/offset_10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_item_alert_height_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="正常"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_12sp"
+                        />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <!--间隔时长-->
+            <RelativeLayout
+                android:layout_width="@dimen/offset_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_item_alert_height_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <Switch
+                        android:id="@+id/switch_item_alert_height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/offset_10dp"
+                        android:layout_toRightOf="@+id/tv_item_alert_height_time"
+                        android:checked="true"
+                        android:switchMinWidth="40dp"
+                        android:switchPadding="10dp"
+                        android:thumb="@drawable/switch_thumb_selector"
+                        android:track="@drawable/switch_track"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+            <!--开关-->
+            <RelativeLayout
+                android:layout_width="@dimen/offset_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:visibility="gone"
+                >
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <!-- 以下都是侧滑菜单的内容依序排列 -->
+        <Button
+            android:id="@+id/item_del_btn"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_07"
+            android:text="@string/del"
+            android:textColor="@android:color/white"/>
+
+    </com.mcxtzhang.swipemenulib.SwipeMenuLayout>
+
+
+</LinearLayout>
+

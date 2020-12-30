@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--圆背景-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_real_time_oval_float_ball"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_centerVertical="true"
+    android:background="@drawable/icon_real_time_float_bg"
+    >
+
+
+    <!--旋转圆点-->
+    <LinearLayout
+        android:id="@+id/ll_real_time_oval_float_rotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/iv_bg_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@drawable/icon_real_time_oval_roat"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/ll_real_time_oval_float_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        >
+
+        <!--温度值-->
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:id="@+id/ll_normal_temp_contain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <!--整数-->
+            <TextView
+                android:id="@+id/tv_real_time_oval_float_temp_num_integer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+            <!--小数-->
+            <TextView
+                android:id="@+id/tv_real_time_oval_float_temp_num_decimal"
+                android:layout_toRightOf="@id/tv_real_time_oval_float_temp_num_integer"
+                android:layout_alignBaseline="@id/tv_real_time_oval_float_temp_num_integer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=".--"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+            <!--单位-->
+                <TextView
+                    android:visibility="gone"
+                    android:layout_toRightOf="@id/tv_real_time_oval_float_temp_num_decimal"
+                    android:layout_alignBaseline="@id/tv_real_time_oval_float_temp_num_decimal"
+                    android:id="@+id/tv_real_time_oval_float_temp_num_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="℃"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    />
+        </RelativeLayout>
+        <!--超过45度显示为 '- - - -' -->
+        <LinearLayout
+            android:id="@+id/ll_err_temp_contain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <!--整数-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textColor="@color/white"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                />
+            <!--小数-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=".--"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+        <!--实时体温-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_main"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
